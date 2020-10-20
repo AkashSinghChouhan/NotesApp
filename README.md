@@ -1,7 +1,7 @@
 # NotesApp
 
 
-Technology used:-
+##Technology used:-
 Node js + Express js + MySql
 
 
