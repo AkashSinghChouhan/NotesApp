@@ -19,29 +19,6 @@
 -- Table structure for table `notes`
 --
 
-DROP TABLE IF EXISTS `notes`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `notes` (
-  `id` int(11) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `content` varchar(255) DEFAULT NULL,
-  `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `status` int(5) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `notes`
---
-
-LOCK TABLES `notes` WRITE;
-/*!40000 ALTER TABLE `notes` DISABLE KEYS */;
-INSERT INTO `notes` VALUES (0,'test','test','2008-01-01 00:00:01','2008-01-01 00:00:01',NULL),(2,'test2','test2','2008-01-01 00:00:01','2008-01-01 00:00:01',NULL);
-/*!40000 ALTER TABLE `notes` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `notes2`
@@ -74,34 +51,7 @@ INSERT INTO `notes2` VALUES (1,'te','te','2020-10-20 09:31:02','2007-12-31 18:30
 /*!40000 ALTER TABLE `notes2` ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- Table structure for table `notes_mapping`
---
 
-DROP TABLE IF EXISTS `notes_mapping`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `notes_mapping` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `note_id` int(11) NOT NULL,
-  `note_version` int(5) NOT NULL,
-  `content` varchar(255) DEFAULT NULL,
-  `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `updated_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `deleted_date` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `notes_mapping`
---
-
-LOCK TABLES `notes_mapping` WRITE;
-/*!40000 ALTER TABLE `notes_mapping` DISABLE KEYS */;
-INSERT INTO `notes_mapping` VALUES (1,23,1,NULL,'2020-10-19 20:18:23','2020-10-19 20:18:23','0000-00-00 00:00:00'),(2,4,2,NULL,'2020-10-19 20:32:13','2020-10-19 20:32:13','0000-00-00 00:00:00'),(3,24,1,NULL,'2020-10-19 20:42:25','2020-10-19 20:42:25','0000-00-00 00:00:00'),(4,24,3,NULL,'2020-10-19 20:44:22','2020-10-19 20:44:22','0000-00-00 00:00:00'),(5,25,1,NULL,'2020-10-20 05:49:45','2020-10-20 05:49:45','0000-00-00 00:00:00'),(6,26,1,NULL,'2020-10-20 05:54:57','2020-10-20 05:54:57','0000-00-00 00:00:00'),(7,27,1,NULL,'2020-10-20 05:59:28','2020-10-20 05:59:28','0000-00-00 00:00:00'),(8,30,1,NULL,'2020-10-20 15:11:53','2020-10-20 15:11:53','0000-00-00 00:00:00'),(9,32,1,NULL,'2020-10-20 15:23:53','2020-10-20 15:23:53','0000-00-00 00:00:00'),(10,33,1,NULL,'2020-10-20 15:25:29','2020-10-20 15:25:29','0000-00-00 00:00:00'),(11,35,1,NULL,'2020-10-20 15:27:34','2020-10-20 15:27:34','0000-00-00 00:00:00'),(12,36,1,NULL,'2020-10-20 15:28:05','2020-10-20 15:28:05','0000-00-00 00:00:00'),(13,37,1,NULL,'2020-10-20 15:29:35','2020-10-20 15:29:35','0000-00-00 00:00:00');
-/*!40000 ALTER TABLE `notes_mapping` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
