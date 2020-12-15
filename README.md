@@ -1,4 +1,5 @@
 # NotesApp
+Description of the app : It implements RESTful API webservice which is responsible for managing and storing in database simple notes (without the UI part). Webservice accepts HTTP calls for creating, reading, updating and deleting notes (CRUD).
 
 
 ## **Technology used:-**
