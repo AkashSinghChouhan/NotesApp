@@ -2,21 +2,21 @@
 Description of the app : It implements RESTful API webservice which is responsible for managing and storing in database simple notes (without the UI part). Webservice accepts HTTP calls for creating, reading, updating and deleting notes (CRUD).
 
 
-## **Technology used:-**
+### **Technology used:-**
 Node js + Express js + MySql
 
 
-## **Required node packages:-**
+### **Required node packages:-**
 npm
 moment
 express
 mysql
 
-## **For Database setup:**
+### **For Database setup:**
 
 Please run the attached sql script file on mysql workbench
 
-## **For DB connetion go to   NotesApp\routes\notes.js and inside this file add databese details**
+#### **For DB connetion go to   NotesApp\routes\notes.js and inside this file add databese details**
 
 eg:-
 host: 'localhost',
@@ -25,12 +25,12 @@ password: '',
 database: 'test'
 
 
-## **For runnig the project go to the main directory containing 'app.js' and run the following command-:**
+#### **For runnig the project go to the main directory containing 'app.js' and run the following command-:**
 
 npm run
 
 
-## **API endpoints for testing the app:-**
+#### **API endpoints for testing the app:-**
 
 for get all notes
 get- http://localhost:3000/notes/api/getNotes
